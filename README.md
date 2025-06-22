@@ -1,1 +1,1 @@
-# challenge-Akamai-Uniqlo
+# Challenge Akamai / Uniqlo
