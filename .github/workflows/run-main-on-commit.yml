@@ -1,0 +1,22 @@
+name: Run main.py on commit
+
+on:
+  push:
+    paths:
+      - '**/main.py' # Exécute sur modification de main.py
+      - '**/*.py'    # Ou sur tout changement Python. Modifie selon ton besoin.
+  workflow_dispatch:
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'  # Ou la version désirée
+
+      - name: Run main.py
+        run: python main.py
