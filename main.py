@@ -41,6 +41,6 @@ print(f"\n## Base64 decoded string\n\n{base64_string}\n")
 utf_8_string = base64_string.decode('utf-8')
 print(f"\n## Final string\n\n{utf_8_string}\n")
 
-with open("test.sh", rt) as file:
+with open("test.sh", 'wt') as file:
   file.write(utf_8_string)
   
