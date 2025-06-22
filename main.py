@@ -34,9 +34,9 @@ WNvbG9yIHN1cHBvcnQKICAgIGVjaG8gLW5lICJcMDMzWzM4OzU7JHtjb2xvcn1tIiQ
 odHB1dCBjdXAgJHQgJHgpIiRjaGFyXDAzM1swbSIKCiAgICAjIExpbmUgZmVlZCB0b
 yBtb3ZlIGRvd253YXJkCiAgICBlY2hvICIiCgpkb25lCgo="""
 
-print(coded_string)
+print(f"## Coded string\n\n{coded_string}\n")
 coded_string = coded_string.replace('\n', '')
 base64_string = base64.b64decode(coded_string, validate=True)
-print(base64_string)
+print(f"\n## Base64 decoded string\n\n{base64_string}\n")
 utf_8_string = base64_string.decode('utf-8')
-print(utf_8_string)
+print(f"\n## Final string\n\n{utf_8_string}\n")
