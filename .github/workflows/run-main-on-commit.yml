@@ -21,4 +21,4 @@ jobs:
         run: |
           python main.py
           export TERM=xterm
-          timeout 10s bash test.sh
+          timeout 10s -s SIGINT bash test.sh
