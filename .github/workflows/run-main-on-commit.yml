@@ -20,6 +20,6 @@ jobs:
           python main.py
           export TERM=xterm
           echo ""
-          echo "Script execution"
+          echo "## Script execution"
           echo ""
           timeout --preserve-status -s SIGINT 10s bash test.sh
