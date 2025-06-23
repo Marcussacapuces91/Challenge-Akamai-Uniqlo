@@ -1,5 +1,6 @@
 import base64
 import binascii
+import subprocess
 
 coded_string = """IyEvYmluL2Jhc2gKCiMgQ29uZ3Jhd
 HVsYXRpb25zISBZb3UgZm91bmQgdGhlIGVhc3RlciBlZ2chIOKdpO+4jwojIOOBiuO
@@ -44,3 +45,4 @@ print(f"\n## Final string\n\n{utf_8_string}\n")
 with open("test.sh", 'wt', encoding='utf-8') as file:
   file.write(utf_8_string)
   
+subprocess.run(['bash', 'test.sh'])
