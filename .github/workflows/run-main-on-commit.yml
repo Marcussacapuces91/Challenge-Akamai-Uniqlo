@@ -2,9 +2,9 @@ name: Run main.py on commit
 
 on:
   push
-#    paths:
-#      - '**/main.py' # Exécute sur modification de main.py
-#  workflow_dispatch:
+    #    paths:
+    #      - '**/main.py' # Exécute sur modification de main.py
+  workflow_dispatch:
 
 jobs:
   run-script:
