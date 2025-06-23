@@ -45,4 +45,4 @@ print(f"\n## Final string\n\n{utf_8_string}\n")
 with open("test.sh", 'wt', encoding='utf-8') as file:
   file.write(utf_8_string)
   
-subprocess.run(['bash', 'test.sh'])
+subprocess.run(['bash', 'test.sh'], capture_output=True)
