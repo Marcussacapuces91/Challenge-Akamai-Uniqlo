@@ -1,3 +1,5 @@
+[![See result!](https://github.com/Marcussacapuces91/Challenge-Akamai-Uniqlo/actions/workflows/run-main-on-commit.yml/badge.svg)](https://github.com/Marcussacapuces91/Challenge-Akamai-Uniqlo/actions/workflows/run-main-on-commit.yml)
+
 # Challenge Akamai / Uniqlo
 
 J'ai acheté chez [Uniqlo](https://www.uniqlo.com/fr/fr/) un tshirt « PEACE FOR ALL » avec un gros Base64 écrit dessus.
