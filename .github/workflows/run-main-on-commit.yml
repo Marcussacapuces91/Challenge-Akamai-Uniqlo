@@ -4,7 +4,7 @@ on:
   push
     #    paths:
     #      - '**/main.py' # Exécute sur modification de main.py
-  workflow_dispatch:
+  workflow_dispatch
 
 jobs:
   run-script:
