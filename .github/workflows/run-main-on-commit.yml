@@ -1,11 +1,10 @@
 name: Run main.py on commit
 
 on:
-  push:
-    paths:
-      - '**/main.py' # Exécute sur modification de main.py
-      - '**/*.py'    # Ou sur tout changement Python. Modifie selon ton besoin.
-  workflow_dispatch:
+  push
+#    paths:
+#      - '**/main.py' # Exécute sur modification de main.py
+#  workflow_dispatch:
 
 jobs:
   run-script:
@@ -19,7 +18,7 @@ jobs:
           python-version: '3.13'  # Ou la version désirée
 
       - name: Run main.py
-        run: python main.py
-
-      - name: Run script
-        run: bash test.sh
+        run: |
+          python main.py
+          export TERM=xterm
+          bash test.sh
