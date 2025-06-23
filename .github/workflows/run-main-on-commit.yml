@@ -21,5 +21,5 @@ jobs:
         run: |
           python main.py
           export TERM=xterm
-          echo "Script execution"
+          echo "\nScript execution\n"
           timeout --preserve-status -s SIGINT 10s bash test.sh
